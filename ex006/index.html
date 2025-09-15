@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 006</title>
+</head>
+<body>
+    <h1>Formulário simples</h1>
+
+    <!-- Formulário com método POST -->
+    <form action="" method="post">
+        <p> <!-- Linha de input do form dentro de um parágrafo, com um label e depois um input do tipo TEXT para o nome do usuário -->
+            <label for="nome_id">Nome</label>
+            <input type="text" name="nome" id="nome_id">
+        </p>
+        <p> <!-- Linha de input do form dentro de um parágrafo, com um label e depois um input do tipo EMAIL para o e-mail do usuário -->
+            <label for="email_id">E-mail</label>
+            <input type="email" name="email" id="email_id">
+        </p>
+        <p> <!-- Linha de input do form dentro de um parágrafo, com um label e depois um input do tipo PASSWORD para a senha do usuário -->
+            <label for="senha_id">Senha</label>
+            <input type="password" name="senha" id="senha_id">
+        </p>
+
+        <!-- Botão de envio do formulário -->
+        <input type="submit" value="Cadastro">
+    </form>
+    <hr> <!-- Separando a seção -->
+
+    <h1>Formulário de cadastro</h1>
+
+    <form action="" method="post">
+        <p> <!-- Linha de input para o nome completo -->
+            <label for="nome_completo_id">Nome completo</label>
+            <input type="text" name="nome_completo" id="nome_completo_id">
+        </p>
+        <p> <!-- Linha de input para o username -->
+            <label for="username_id">Nome de usuário</label>
+            <input type="text" name="username" id="username_id">
+        </p>
+        <p> <!-- Linha de input para o e-mail -->
+            <label for="email_id_2">E-mail</label>
+            <input type="email" name="email_usuario" id="email_id_2">
+        </p>
+        <p> <!-- Linha de input para a senha -->
+            <label for="senha_id_2">Senha</label>
+            <input type="password" name="senha_usuario" id="senha_id_2">
+        </p>
+        <p> <!-- Linha de input para o time de futebol -->
+            Time: <br>
+            <input type="radio" name="sao_paulo" id="sao_paulo_time">
+            <label for="sao_paulo_time">São Paulo</label>
+
+            <input type="radio" name="corinthians" id="corinthians_time">
+            <label for="corinthians_time">Corinthians</label>
+
+            <input type="radio" name="flamengo" id="flamengo_time">
+            <label for="flamengo_time">Flamengo</label>
+
+            <input type="radio" name="palmeiras" id="palmeiras_time">
+            <label for="palmeiras_time">Palmeiras</label>
+        </p>
+        <p> <!-- Linha de input para os interesses -->
+            Interesses: <br>
+            <input type="checkbox" name="tecnologia" id="opcao_tecnologia">
+            <label for="opcao_tecnologia">Tecnologia</label>
+
+            <input type="checkbox" name="esporte" id="opcao_esporte">
+            <label for="opcao_esporte">Esporte</label>
+            
+            <input type="checkbox" name="musica" id="opcao_musica">
+            <label for="opcao_musica">Música</label>
+        </p>
+        <p> <!-- Linha de input para a cidade com uma lista de opções via SELECT -->
+            <label for="cidade_id">Cidade:</label>
+            <select name="cidade" id="cidade_id">
+                <option value="">Selecionar...</option>
+                <option value="sao_paulo_cidade">São Paulo</option>
+                <option value="rio_de_janeiro_cidade">Rio de Janeiro</option>
+                <option value="belo_horizonte_cidade">Belo Horizonte</option>
+            </select>
+        </p>
+        <p> <!-- Linha de input de mensagem -->
+            <label for="mensagem_id">Mensagem</label>
+            <br>
+            <textarea name="mensagem" id="mensagem_id" rows="10" cols="50"></textarea>
+        </p>
+        <p> <!-- Linha para os botões de enviar e redefinir -->
+            <input type="submit">
+            <input type="reset">
+        </p>
+    </form>
+</body>
+</html>
